@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose a focused improvement with its privacy trade-offs.
+title: "feature: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What troubleshooting problem should this solve?
+      description: Describe the user and the moment the current workflow breaks down.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would a good solution look like?
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy impact
+      description: What data would be processed, persisted, or sent anywhere?
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: I will use synthetic examples only and will not attach real captures or customer data.
+          required: true

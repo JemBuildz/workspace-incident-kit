@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible issue without sharing private diagnostics.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach HAR files, email headers, tokens, cookies, customer data, or production hostnames. Use the synthetic demo or a sanitized description."
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use the bundled synthetic sample or synthetic `.test` data only.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: I did not attach a real HAR, credential, cookie, customer record, or production hostname.
+          required: true

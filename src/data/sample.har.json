@@ -1,0 +1,73 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": { "name": "Workspace Incident Kit synthetic demo", "version": "0.1.0" },
+    "entries": [
+      {
+        "startedDateTime": "2026-11-16T20:45:01.120Z",
+        "time": 184,
+        "request": {
+          "method": "GET",
+          "url": "https://calendar.google.test/api/events?view=week&access_token=synthetic-demo-token-839201",
+          "headers": [
+            { "name": "Accept", "value": "application/json" },
+            { "name": "Authorization", "value": "Bearer synthetic-token-do-not-use" }
+          ]
+        },
+        "response": { "status": 200, "statusText": "OK" },
+        "timings": { "blocked": 1, "dns": 7, "connect": 22, "send": 1, "wait": 112, "receive": 41 }
+      },
+      {
+        "startedDateTime": "2026-11-16T20:45:02.004Z",
+        "time": 2876,
+        "request": {
+          "method": "POST",
+          "url": "https://mail.google.test/api/send?recipient=demo.person@example.test&mode=send",
+          "headers": [
+            { "name": "Content-Type", "value": "application/json" },
+            { "name": "Cookie", "value": "SID=synthetic-cookie-value-123456" }
+          ],
+          "postData": { "mimeType": "application/json", "text": "{\"message\":\"synthetic sample only\"}" }
+        },
+        "response": { "status": 503, "statusText": "Service Unavailable" },
+        "timings": { "blocked": 10, "dns": 8, "connect": 29, "send": 4, "wait": 2634, "receive": 191 }
+      },
+      {
+        "startedDateTime": "2026-11-16T20:45:04.991Z",
+        "time": 214,
+        "request": {
+          "method": "GET",
+          "url": "https://drive.google.test/api/files?key=synthetic-file-key-123456789&folder=team-notes",
+          "headers": [ { "name": "Accept", "value": "application/json" } ]
+        },
+        "response": { "status": 200, "statusText": "OK" },
+        "timings": { "blocked": 0, "dns": 5, "connect": 19, "send": 1, "wait": 142, "receive": 47 }
+      },
+      {
+        "startedDateTime": "2026-11-16T20:45:06.340Z",
+        "time": 3482,
+        "request": {
+          "method": "GET",
+          "url": "https://drive.google.test/api/preview?item=missing-sample-item",
+          "headers": [
+            { "name": "Accept", "value": "application/json" },
+            { "name": "X-API-Key", "value": "synthetic-api-key-abc-123" }
+          ]
+        },
+        "response": { "status": 404, "statusText": "Not Found" },
+        "timings": { "blocked": 3, "dns": 7, "connect": 24, "send": 2, "wait": 3189, "receive": 257 }
+      },
+      {
+        "startedDateTime": "2026-11-16T20:45:09.105Z",
+        "time": 642,
+        "request": {
+          "method": "GET",
+          "url": "https://docs.google.test/api/documents?tab=activity&session=synthetic-session-id-556677",
+          "headers": [ { "name": "Accept", "value": "application/json" } ]
+        },
+        "response": { "status": 200, "statusText": "OK" },
+        "timings": { "blocked": 2, "dns": 7, "connect": 20, "send": 2, "wait": 439, "receive": 172 }
+      }
+    ]
+  }
+}
