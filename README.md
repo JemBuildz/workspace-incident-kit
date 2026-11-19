@@ -73,4 +73,4 @@ Early MVP. The interface and feature set will evolve as the privacy contract and
 
 ## License
 
-No license has been selected. Until one is added, all rights remain with the copyright holder; do not assume the source is licensed for reuse. A license should be selected before accepting external code contributions or presenting the repository as an open-source package.
+This project is licensed under the [MIT License](LICENSE).

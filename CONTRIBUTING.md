@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping make troubleshooting clearer and safer. Suggestions, discussions, and synthetic bug reports are welcome. The most useful early improvements are synthetic HAR fixtures, parser edge cases, redaction tests, accessibility fixes, and explanations tied to observable evidence. A project license has not been selected yet, so please hold off on code contributions until one is added.
+Thanks for helping make troubleshooting clearer and safer. This project is licensed under MIT; code contributions are accepted on that basis. Suggestions, discussions, and synthetic bug reports are welcome. The most useful early improvements are synthetic HAR fixtures, parser edge cases, redaction tests, accessibility fixes, and explanations tied to observable evidence.
 
 ## Before opening a pull request
 
